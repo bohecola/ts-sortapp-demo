@@ -1,3 +1,5 @@
+import { Sorter } from "./Sorter";
+
 // 节点, 一般来讲单独再写一个文件，定义节点的结构
 // 这里节点只在链表中使用, 不会在多个地方使用
 class Node {
@@ -6,7 +8,7 @@ class Node {
   constructor(public data: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
   // 链表头
   head: Node | null = null;
 
